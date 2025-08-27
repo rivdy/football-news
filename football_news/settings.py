@@ -32,7 +32,7 @@ PRODUCTION = os.getenv('PRODUCTION', 'False').lower() == 'true'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["Localhost","127.0.0.1"]
+ALLOWED_HOSTS = ["Localhost","127.0.0.1", 'rivaldy-putra-footballnews.pbp.cs.ui.ac.id' ]
 
 
 # Application definition
