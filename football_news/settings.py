@@ -34,7 +34,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["Localhost","127.0.0.1", 'rivaldy-putra-footballnews.pbp.cs.ui.ac.id' ]
 
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://rivaldy-putra-footballnews.pbp.cs.ui.ac.id/"
+]
 # Application definition
 
 INSTALLED_APPS = [
