@@ -35,7 +35,9 @@ DEBUG = True
 ALLOWED_HOSTS = ["Localhost","127.0.0.1", 'rivaldy-putra-footballnews.pbp.cs.ui.ac.id' ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://rivaldy-putra-footballnews.pbp.cs.ui.ac.id/"
+    "https://rivaldy-putra-footballnews.pbp.cs.ui.ac.id",
+    "http://127.0.0.1:8000",
+    "http://localhost:8000",
 ]
 # Application definition
 
@@ -64,7 +66,7 @@ ROOT_URLCONF = 'football_news.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],  # <— tambahkan ini
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
